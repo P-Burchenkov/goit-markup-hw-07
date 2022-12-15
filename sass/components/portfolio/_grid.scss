@@ -1,0 +1,9 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.grid__item {
+  width: 370px;
+}
