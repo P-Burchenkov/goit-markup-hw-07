@@ -29,9 +29,7 @@
 }
 
 .value__icon-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include inline-flex-al-jf();
   width: 270px;
   height: 120px;
   margin-bottom: 30px;

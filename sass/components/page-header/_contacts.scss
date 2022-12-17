@@ -8,8 +8,7 @@
 }
 
 .contacts__link {
-  display: inline-flex;
-  align-items: center;
+  @include inline-flex-al-jf();
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -20,14 +19,14 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 .contacts__icon {
   margin-right: 10px;
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 }

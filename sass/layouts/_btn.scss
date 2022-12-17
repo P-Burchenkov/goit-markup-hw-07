@@ -1,7 +1,6 @@
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include inline-flex-al-jf();
+  min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 0;

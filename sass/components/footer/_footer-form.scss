@@ -1,7 +1,3 @@
-.sign-container {
-  margin-left: auto;
-}
-
 .sign-form {
   position: relative;
 }
@@ -39,21 +35,21 @@
   outline: transparent;
   background-color: inherit;
   cursor: pointer;
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:focus + .sign-form__description {
+    color: var(--accent-color);
+  }
+
+  &:not(:placeholder-shown) {
+    color: var(--white-color);
+  }
 }
 
-.sign-form__input:focus {
-  border-color: var(--accent-color);
-}
-
-.sign-form__input:focus + .sign-form__description {
-  color: var(--accent-color);
-}
-
-.sign-form__input:not(:placeholder-shown) {
-  color: var(--white-color);
-}
-
-.btn--sign-form {
+.btn__sign-form {
   padding-left: 28px;
   padding-right: 28px;
   min-width: 200px;

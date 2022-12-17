@@ -5,10 +5,13 @@
   background-color: var(--banner-background-color);
 }
 
-.page-footer--flex-container {
+.page-footer__container {
   display: flex;
-}
+  &--flex-element:nth-child(1) {
+    margin-right: 70px;
+  }
 
-.foot-adress-container {
-  margin-right: 70px;
+  &--flex-element:last-child {
+    margin-left: auto;
+  }
 }

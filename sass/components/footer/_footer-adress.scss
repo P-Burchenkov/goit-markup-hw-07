@@ -10,18 +10,16 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-}
 
-.site-adress__link--street {
-  color: var(--white-color);
-}
-
-.site-adress__link--mail,
-.site-adress__link--phone {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.site-adress__link:hover,
-.site-adress__link:focus {
-  color: var(--accent-color);
+  &--mail,
+  &--phone {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &--street {
+    color: var(--white-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

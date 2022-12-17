@@ -1,14 +1,20 @@
-.main-nav {
+.page-header__container {
   display: flex;
-  align-items: center;
+}
+
+.main-nav {
+  @include inline-flex-al-jf();
 }
 
 .main-nav__list {
   display: flex;
 }
 
-.main-nav__item:not(:last-child) {
-  margin-right: 50px;
+.main-nav__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .main-nav__link {
@@ -24,21 +30,16 @@
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
-}
 
-.main-nav__link:hover,
-.main-nav__link:focus,
-.main-nav__link--current {
-  color: var(--accent-color);
-}
-
-.main-nav__item {
-  position: relative;
+  &:hover,
+  &:focus,
+  &--current {
+    color: var(--accent-color);
+  }
 }
 
 .main-nav__link--current::after {
   content: '';
-
   position: absolute;
   left: 0;
   bottom: 0;
