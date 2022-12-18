@@ -402,6 +402,10 @@ body {
   width: 370px;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .contacts {
   display: flex;
   margin-left: auto;
